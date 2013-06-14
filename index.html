@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="business,biz,financial,software,health">
     <meta name="author" content="Mario Chaves <macndesign@gmail.com">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -17,6 +18,7 @@
         body {
             height: 100%;
             /* The html and body elements cannot have any padding or margin. */
+            font-family: 'Raleway', sans-serif;
         }
 
         body { background-image: url("assets/img/agsquare_@2X.png") }
@@ -42,11 +44,11 @@
 
             /* Lastly, apply responsive CSS fixes as necessary */
         @media (max-width: 767px) {
-            #footer {
+            #footer, .main {
                 margin-left: -20px;
                 margin-right: -20px;
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
             }
         }
 
@@ -61,6 +63,31 @@
             overflow: hidden;
             text-indent: -999px;
         }
+
+        #myCarousel {
+            -webkit-box-shadow: 0 3px 5px rgba(126, 126, 126, 0.8);
+               -moz-box-shadow: 0 3px 5px rgba(126, 126, 126, 0.8);
+                    box-shadow: 0 3px 5px rgba(126, 126, 126, 0.8);
+        }
+
+        .main {
+            background: rgb(238,238,238); /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  rgba(238,238,238,1) 0%, rgba(252,252,252,1) 11%, rgba(252,252,252,1) 25%, rgba(242,242,242,1) 30%, rgba(255,255,255,1) 81%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(11%,rgba(252,252,252,1)), color-stop(25%,rgba(252,252,252,1)), color-stop(30%,rgba(242,242,242,1)), color-stop(81%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(252,252,252,1) 11%,rgba(252,252,252,1) 25%,rgba(242,242,242,1) 30%,rgba(255,255,255,1) 81%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(252,252,252,1) 11%,rgba(252,252,252,1) 25%,rgba(242,242,242,1) 30%,rgba(255,255,255,1) 81%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(252,252,252,1) 11%,rgba(252,252,252,1) 25%,rgba(242,242,242,1) 30%,rgba(255,255,255,1) 81%,rgba(238,238,238,1) 100%); /* IE10+ */
+            background: linear-gradient(135deg,  rgba(238,238,238,1) 0%,rgba(252,252,252,1) 11%,rgba(252,252,252,1) 25%,rgba(242,242,242,1) 30%,rgba(255,255,255,1) 81%,rgba(238,238,238,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+            -webkit-box-shadow: 0 2px 4px rgba(126, 126, 126, 0.3);
+               -moz-box-shadow: 0 2px 4px rgba(126, 126, 126, 0.3);
+                    box-shadow: 0 2px 4px rgba(126, 126, 126, 0.3);
+
+            padding: 0 0 0.5em;
+        }
+
+        /* TODO: Retirar quando colocar as imagens corretas no Slider */
         .carousel-inner .item img {
             width: 1170px;
         }
@@ -111,7 +138,9 @@
             </div>
 
         </div>
+    </div>
 
+    <div class="container">
         <div class="row">
 
             <!-- Slider -->
@@ -143,8 +172,23 @@
             </div>
 
         </div>
-
     </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="page-header">
+                        <h2>Novo site da JLP Business <small>confira novas atualizações de produtos e serviços</small></h2>
+                    </div>
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                    <p>Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="push"></div>
 </div>
 <div id="footer">
